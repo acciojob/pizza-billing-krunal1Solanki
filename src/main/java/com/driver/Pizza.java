@@ -9,7 +9,8 @@ public class Pizza {
     private int extreToppings;
     private int bag;
     public Pizza(Boolean isVeg){
-        price += 300;
+        if(isVeg) price += 300;
+        else price += 400;
         extraCheese = 80;
         extreToppings = 70;
         this.isVeg = isVeg;
