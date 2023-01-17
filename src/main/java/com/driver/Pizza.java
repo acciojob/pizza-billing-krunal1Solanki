@@ -5,10 +5,11 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-
+    private int extraCheese;
+    private int extreToppings;
+    private int bag;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
-        // your code goes here
     }
 
     public int getPrice(){
@@ -16,15 +17,17 @@ public class Pizza {
     }
 
     public void addExtraCheese(){
-        // your code goes here
+        this.price += extraCheese;
     }
 
     public void addExtraToppings(){
         // your code goes here
+        this.price += extreToppings;
     }
 
     public void addTakeaway(){
         // your code goes here
+        this.price += bag;
     }
 
     public String getBill(){
